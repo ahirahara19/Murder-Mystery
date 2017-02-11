@@ -1,0 +1,38 @@
+! Blurb file created by Inform build 6M62
+
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform"
+release to "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "Murder Mystery.gblorb"
+storyfile "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Build/output.ulx" include
+ifiction "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Metadata.iFiction" include
+cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "3EF4EC1F-F571-4241-9120-B6D242420F67"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2017"
+placeholder [TITLE] = "Murder Mystery"
+placeholder [AUTHOR] = "Aaron Hirahara"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
