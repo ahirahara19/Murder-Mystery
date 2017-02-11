@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*14;
+Constant REQUISITION_STACK_SIZE = 3*17;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10570,7 +10570,9 @@ Constant DirectionObject_9 = I60_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I125_alleyway
+ 0 0 0 I127_sidewalk 0 0 0 0 0 0 0 0 ! Exits from: I125_alleyway
+ I125_alleyway 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I127_sidewalk
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I128_bakery
 ;
 
 Class VPH_Class;
@@ -11022,7 +11024,7 @@ Object selfobj ""
     with cap_short_name BC_143
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link nothing
+    with IK2_Link I126_dead_body
     with IK8_Count 0
     with IK8_Link nothing
     with KD_Count 8
@@ -11042,13 +11044,65 @@ Object I125_alleyway ""
     with room_index -1
     has mark_as_room
     with IK1_Count 0
-    with IK1_Link nothing
+    with IK1_Link I127_sidewalk
     with KD_Count 1
     with name 'alleyway' 'rooms//p' 
     with description BC_149
     with list_together BC_150
     with plural BC_151
     with article BC_152
+;
+
+Object -> I126_dead_body ""
+    class K2_thing
+    with short_name BC_153
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 1
+    with IK2_Link nothing
+    with KD_Count 2
+    with name 'dead' 'body' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_154
+    with initial BC_155
+    with list_together BC_156
+    with plural BC_157
+    with article BC_158
+;
+
+Object I127_sidewalk ""
+    class K1_room
+    with short_name BC_159
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_160
+    has mark_as_room
+    with IK1_Count 1
+    with IK1_Link I128_bakery
+    with KD_Count 1
+    with name 'sidewalk' 'rooms//p' 
+    with description BC_161
+    with list_together BC_162
+    with plural BC_163
+    with article BC_164
+;
+
+Object I128_bakery ""
+    class K1_room
+    with short_name BC_165
+    has proper
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 2
+    with IK1_Link nothing
+    with KD_Count 1
+    with name 'bakery' 'rooms//p' 
+    with description BC_166
+    with list_together BC_167
+    with plural BC_168
+    with article BC_169
 ;
 
 Constant I71_english_language = 1;
@@ -11102,12 +11156,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_153) ! 25 command prompt
+  (BC_170) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_154) ! 32 story author
-  (BC_155) ! 33 story headline
-  (BC_156) ! 34 story genre
-  (BC_157) ! 35 story description
+  (BC_171) ! 32 story author
+  (BC_172) ! 33 story headline
+  (BC_173) ! 34 story genre
+  (BC_174) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11122,14 +11176,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_158) (BC_159) (BC_160) (BC_161) (BC_162) ;
+Array tab_0_0 table $0664 0 (BC_175) (BC_176) (BC_177) (BC_178) (BC_179) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_93) (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11139,7 +11193,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $03  ! Column 1
+  $07  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -27707,7 +27761,7 @@ Constant SLOW_ROUTE_FINDING;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 Constant NUM_DOORS = 0;
-Constant NUM_ROOMS = 1;
+Constant NUM_ROOMS = 3;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -27909,7 +27963,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 14 + 32;
+Constant MAX_ROUTE_LENGTH = 17 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -48708,21 +48762,24 @@ Verb 'notify'
 
 
 
-Constant TX_PS_35 = ">";
+Constant TX_PS_39 = ">";
 Constant TX_PS_4 = "Aaron Hirahara";
 Constant TX_PS_34 = "Alleyway";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_32 = "As good-looking as ever.";
-Constant TX_PS_36 = "Fiction";
+Constant TX_PS_38 = "Bakery";
+Constant TX_PS_40 = "Fiction";
 Constant TX_PS_2 = "Murder Mystery";
-Constant TX_PS_40 = "QUIT";
-Constant TX_PS_37 = "RESTART";
-Constant TX_PS_38 = "RESTORE a saved game";
-Constant TX_PS_41 = "UNDO the last command";
+Constant TX_PS_44 = "QUIT";
+Constant TX_PS_41 = "RESTART";
+Constant TX_PS_42 = "RESTORE a saved game";
+Constant TX_PS_37 = "Sidewalk";
+Constant TX_PS_45 = "UNDO the last command";
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
 Constant TX_PS_11 = "containers";
+Constant TX_PS_35 = "dead body";
 Constant TX_PS_15 = "devices";
 Constant TX_PS_17 = "directions";
 Constant TX_PS_10 = "doors";
@@ -48737,7 +48794,8 @@ Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_39 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_43 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_36 = "sidewalk";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -56055,15 +56113,32 @@ Array BC_150 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_151 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_152 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_153 --> PACKED_TEXT_STORAGE TX_PS_35;
-Array BC_154 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_155 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_156 --> PACKED_TEXT_STORAGE TX_PS_36;
+Array BC_154 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_155 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_156 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_157 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_158 --> PACKED_TEXT_STORAGE TX_PS_37;
-Array BC_159 --> PACKED_TEXT_STORAGE TX_PS_38;
-Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_39;
-Array BC_161 --> PACKED_TEXT_STORAGE TX_PS_40;
-Array BC_162 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_158 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_159 --> PACKED_TEXT_STORAGE TX_PS_36;
+Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_37;
+Array BC_161 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_162 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_163 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_164 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_38;
+Array BC_166 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_167 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_168 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_169 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_170 --> PACKED_TEXT_STORAGE TX_PS_39;
+Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_173 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_42;
+Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_43;
+Array BC_178 --> PACKED_TEXT_STORAGE TX_PS_44;
+Array BC_179 --> PACKED_TEXT_STORAGE TX_PS_45;
 
 
 

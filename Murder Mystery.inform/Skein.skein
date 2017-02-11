@@ -4,7 +4,147 @@
     <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
     <item nodeId="node-4083">
         <command xml:space="preserve">Murder Mystery</command>
-        <result xml:space="preserve"></result>
+        <result xml:space="preserve">
+
+
+Murder Mystery
+An Interactive Fiction by Aaron Hirahara
+Release 1 / Serial number 170210 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Alleyway
+You can see a dead body here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4091"></child>
+            <child nodeId="node-4092"></child>
+            <child nodeId="node-4086"></child>
+        </children>
+    </item>
+    <item nodeId="node-4086">
+        <command xml:space="preserve">x alleyway</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4087"></child>
+        </children>
+    </item>
+    <item nodeId="node-4087">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4088"></child>
+        </children>
+    </item>
+    <item nodeId="node-4088">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4089"></child>
+        </children>
+    </item>
+    <item nodeId="node-4089">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4090"></child>
+        </children>
+    </item>
+    <item nodeId="node-4090">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4092">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4093"></child>
+        </children>
+    </item>
+    <item nodeId="node-4093">
+        <command xml:space="preserve">north</command>
+        <result xml:space="preserve">
+Bakery
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4094"></child>
+            <child nodeId="node-4101"></child>
+        </children>
+    </item>
+    <item nodeId="node-4101">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Alleyway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4094">
+        <command xml:space="preserve">north</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4095"></child>
+        </children>
+    </item>
+    <item nodeId="node-4095">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4096"></child>
+        </children>
+    </item>
+    <item nodeId="node-4096">
+        <command xml:space="preserve">north</command>
+        <result xml:space="preserve">
+Bakery
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4097"></child>
+        </children>
+    </item>
+    <item nodeId="node-4097">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4098"></child>
+        </children>
+    </item>
+    <item nodeId="node-4098">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4091">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Sidewalk
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
 </Skein>
