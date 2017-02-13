@@ -9,15 +9,19 @@
 
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170210 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170212 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Alleyway
 You can see a dead body here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4091"></child>
+        <children><child nodeId="node-4187"></child>
+            <child nodeId="node-4215"></child>
+            <child nodeId="node-4140"></child>
+            <child nodeId="node-4091"></child>
             <child nodeId="node-4092"></child>
+            <child nodeId="node-4172"></child>
             <child nodeId="node-4086"></child>
         </children>
     </item>
@@ -58,6 +62,13 @@ You can see a dead body here.
         </children>
     </item>
     <item nodeId="node-4090">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4172">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You can't go that way.
 
@@ -141,8 +152,794 @@ sidewalk
     </item>
     <item nodeId="node-4091">
         <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4149"></child>
+            <child nodeId="node-4103"></child>
+        </children>
+    </item>
+    <item nodeId="node-4103">
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Sidewalk
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4106"></child>
+        </children>
+    </item>
+    <item nodeId="node-4106">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4107"></child>
+        </children>
+    </item>
+    <item nodeId="node-4107">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4108"></child>
+        </children>
+    </item>
+    <item nodeId="node-4108">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4109"></child>
+        </children>
+    </item>
+    <item nodeId="node-4109">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4110"></child>
+        </children>
+    </item>
+    <item nodeId="node-4110">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4132"></child>
+            <child nodeId="node-4111"></child>
+        </children>
+    </item>
+    <item nodeId="node-4111">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4112"></child>
+        </children>
+    </item>
+    <item nodeId="node-4112">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4113"></child>
+        </children>
+    </item>
+    <item nodeId="node-4113">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4114"></child>
+        </children>
+    </item>
+    <item nodeId="node-4114">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4115"></child>
+        </children>
+    </item>
+    <item nodeId="node-4115">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4116"></child>
+        </children>
+    </item>
+    <item nodeId="node-4116">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4117"></child>
+        </children>
+    </item>
+    <item nodeId="node-4117">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4118"></child>
+        </children>
+    </item>
+    <item nodeId="node-4118">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4119"></child>
+        </children>
+    </item>
+    <item nodeId="node-4119">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4120"></child>
+        </children>
+    </item>
+    <item nodeId="node-4120">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4121"></child>
+        </children>
+    </item>
+    <item nodeId="node-4121">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4122"></child>
+        </children>
+    </item>
+    <item nodeId="node-4122">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4123"></child>
+        </children>
+    </item>
+    <item nodeId="node-4123">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4124"></child>
+        </children>
+    </item>
+    <item nodeId="node-4124">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4132">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4133"></child>
+        </children>
+    </item>
+    <item nodeId="node-4133">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4134"></child>
+        </children>
+    </item>
+    <item nodeId="node-4134">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4135"></child>
+        </children>
+    </item>
+    <item nodeId="node-4135">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4136"></child>
+        </children>
+    </item>
+    <item nodeId="node-4136">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4137"></child>
+        </children>
+    </item>
+    <item nodeId="node-4137">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4138"></child>
+        </children>
+    </item>
+    <item nodeId="node-4138">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4139"></child>
+        </children>
+    </item>
+    <item nodeId="node-4139">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Alleyway
+You can see a dead body here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4149">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4150"></child>
+        </children>
+    </item>
+    <item nodeId="node-4150">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4151"></child>
+        </children>
+    </item>
+    <item nodeId="node-4151">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4140">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4142"></child>
+            <child nodeId="node-4153"></child>
+            <child nodeId="node-4146"></child>
+            <child nodeId="node-4186"></child>
+        </children>
+    </item>
+    <item nodeId="node-4186">
+        <command xml:space="preserve">x sidewalk</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4146">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4178"></child>
+            <child nodeId="node-4147"></child>
+        </children>
+    </item>
+    <item nodeId="node-4147">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+end of sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4178">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+bakery
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4182"></child>
+        </children>
+    </item>
+    <item nodeId="node-4182">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+west sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4183"></child>
+        </children>
+    </item>
+    <item nodeId="node-4183">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+end of sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4184"></child>
+        </children>
+    </item>
+    <item nodeId="node-4184">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+abandoned building
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4153">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Alleyway
+You can see a dead body here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4154"></child>
+        </children>
+    </item>
+    <item nodeId="node-4154">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4155"></child>
+        </children>
+    </item>
+    <item nodeId="node-4155">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4156"></child>
+        </children>
+    </item>
+    <item nodeId="node-4156">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4157"></child>
+        </children>
+    </item>
+    <item nodeId="node-4157">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4164"></child>
+        </children>
+    </item>
+    <item nodeId="node-4164">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4142">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4167"></child>
+            <child nodeId="node-4191"></child>
+            <child nodeId="node-4143"></child>
+        </children>
+    </item>
+    <item nodeId="node-4143">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4144"></child>
+        </children>
+    </item>
+    <item nodeId="node-4144">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4191">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+flower shop
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4192"></child>
+        </children>
+    </item>
+    <item nodeId="node-4192">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4193"></child>
+        </children>
+    </item>
+    <item nodeId="node-4193">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4194"></child>
+        </children>
+    </item>
+    <item nodeId="node-4194">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+jewlery store
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4201"></child>
+        </children>
+    </item>
+    <item nodeId="node-4201">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4202"></child>
+        </children>
+    </item>
+    <item nodeId="node-4202">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4203"></child>
+        </children>
+    </item>
+    <item nodeId="node-4203">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4204"></child>
+        </children>
+    </item>
+    <item nodeId="node-4204">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4205"></child>
+        </children>
+    </item>
+    <item nodeId="node-4205">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4206"></child>
+        </children>
+    </item>
+    <item nodeId="node-4206">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4207"></child>
+        </children>
+    </item>
+    <item nodeId="node-4207">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4211"></child>
+            <child nodeId="node-4168"></child>
+        </children>
+    </item>
+    <item nodeId="node-4168">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4169"></child>
+        </children>
+    </item>
+    <item nodeId="node-4169">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+entrance to night club
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4170"></child>
+        </children>
+    </item>
+    <item nodeId="node-4170">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4171"></child>
+        </children>
+    </item>
+    <item nodeId="node-4171">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+entrance to apartment building
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4211">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4212"></child>
+        </children>
+    </item>
+    <item nodeId="node-4212">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4213"></child>
+        </children>
+    </item>
+    <item nodeId="node-4213">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+night club entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4214"></child>
+        </children>
+    </item>
+    <item nodeId="node-4214">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+night club entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4215">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4216"></child>
+        </children>
+    </item>
+    <item nodeId="node-4216">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4217"></child>
+        </children>
+    </item>
+    <item nodeId="node-4217">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4218"></child>
+        </children>
+    </item>
+    <item nodeId="node-4218">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4219"></child>
+        </children>
+    </item>
+    <item nodeId="node-4219">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4220"></child>
+        </children>
+    </item>
+    <item nodeId="node-4220">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4221"></child>
+        </children>
+    </item>
+    <item nodeId="node-4221">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+night club entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4222"></child>
+        </children>
+    </item>
+    <item nodeId="node-4222">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+'night club'
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4247"></child>
+        </children>
+    </item>
+    <item nodeId="node-4247">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+night club entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4248"></child>
+        </children>
+    </item>
+    <item nodeId="node-4248">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+apartment building entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4249"></child>
+        </children>
+    </item>
+    <item nodeId="node-4249">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+'apartment building'
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4187">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4188"></child>
+        </children>
+    </item>
+    <item nodeId="node-4188">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
