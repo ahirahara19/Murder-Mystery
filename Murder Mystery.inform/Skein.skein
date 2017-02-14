@@ -7,11 +7,15 @@
         <result xml:space="preserve">
 
 
+It's the afternoon and you are an ace detective working on another murder mystery. The body was found dead in the alleyway and you must find out who the killer is. There are many suspects to investigate and no time to waste so get to work.
+
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170212 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170213 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Alleyway
+A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the north is the sidewalk.
+
 You can see a dead body here.
 
 &gt;</result>
@@ -19,6 +23,7 @@ You can see a dead body here.
         <children><child nodeId="node-4187"></child>
             <child nodeId="node-4215"></child>
             <child nodeId="node-4140"></child>
+            <child nodeId="node-4600"></child>
             <child nodeId="node-4091"></child>
             <child nodeId="node-4092"></child>
             <child nodeId="node-4172"></child>
@@ -464,10 +469,27 @@ corner sidewalk
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4600">
+        <command xml:space="preserve">pickup dead body</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4601"></child>
+        </children>
+    </item>
+    <item nodeId="node-4601">
+        <command xml:space="preserve">take dead body</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-4140">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk and to the east is the east part of the sidewalk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -488,6 +510,7 @@ sidewalk
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the south is the bakery.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -499,6 +522,51 @@ west sidewalk
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 end of sidewalk
+An ordinary concrete sidewalk. Thee is no reason to walk further west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4610"></child>
+        </children>
+    </item>
+    <item nodeId="node-4610">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the south is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4611"></child>
+        </children>
+    </item>
+    <item nodeId="node-4611">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk and to the east is the east part of the sidewalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4612"></child>
+        </children>
+    </item>
+    <item nodeId="node-4612">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the south is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4613"></child>
+        </children>
+    </item>
+    <item nodeId="node-4613">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the south is the jewlery store, and to the north is the crosswalk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -507,6 +575,7 @@ end of sidewalk
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 bakery
+As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
