@@ -7,20 +7,22 @@
         <result xml:space="preserve">
 
 
-It's the afternoon and you are an ace detective working on another murder mystery. The body was found dead in the alleyway and you must find out who the killer is. There are many suspects to investigate and no time to waste so get to work.
+It's the afternoon and you are an ace detective working on another murder mystery. You have a partner who you can ask some questions about. The body was found dead in the alleyway and you must find out who the killer is. There are many suspects to investigate and no time to waste so get to work.
 
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170213 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170214 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Alleyway
 A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the north is the sidewalk.
 
-You can see a dead body here.
+You can see your partner and a dead body here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4187"></child>
+            <child nodeId="node-4717"></child>
+            <child nodeId="node-4719"></child>
             <child nodeId="node-4215"></child>
             <child nodeId="node-4140"></child>
             <child nodeId="node-4600"></child>
@@ -994,6 +996,28 @@ apartment building entrance
         <result xml:space="preserve">
 'apartment building'
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4719">
+        <command xml:space="preserve">ask partner about dead body</command>
+        <result xml:space="preserve">Someone phoned in about the dead body a whie ago. It's really starting to smell if you ask me.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4717">
+        <command xml:space="preserve">ask partner about body</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4718"></child>
+        </children>
+    </item>
+    <item nodeId="node-4718">
+        <command xml:space="preserve">ask partner about dead body</command>
+        <result xml:space="preserve">I like cheese
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
