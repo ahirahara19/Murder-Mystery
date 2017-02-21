@@ -26,7 +26,7 @@ bread is inedible
 stamp card is a thing. understand "card" as stamp card. understand "stamp" as stamp card. stamp card is on dead body. stamp card is undescribed. description of stamp card is "A stamp card with lots of holes punched in it."
 
 After examining dead body:
-	say "you see that she is carrying a stamp card from the bakery next door.";
+	say "you see that she is carrying a stamp card from the bakery next door."
 
 South of Alleyway is sidewalk. description of sidewalk is "An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway."
 
@@ -38,9 +38,7 @@ instead of going east in sidewalk:
 
 west of sidewalk is west sidewalk. description of west sidewalk is "An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery."
 
-west of west sidewalk is end of sidewalk. description of end of sidewalk is "An ordinary concrete sidewalk. Thee is no reason to walk further west."
-
-instead of going west in end of sidewalk:
+instead of going west in west sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
 
 bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough."
@@ -97,13 +95,17 @@ crosswalk is south of corner sidewalk. description of crosswalk is "A white and 
 
 night club entrance is south of crosswalk.
 
-bouncer is in night club entrance.
-
+bouncer is in night club entrance. bouncer is a person.
+		
 'night club' is a room. description of 'night club' is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
 
 a bar is a thing. a bar is in 'night club'. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
 
 shelves is a thing. shelves is in 'night club'. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
+
+After examining shelves:
+	Say "You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
+	Move key to player.
 
 key is a thing. key is on shelf. key is undescribed. description of key is "An ordinary key that unlocks a door."
 

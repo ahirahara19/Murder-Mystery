@@ -11,7 +11,7 @@ It's the afternoon and you are an ace detective working on another murder myster
 
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 alleyway
 A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the south is the sidewalk.
@@ -256,6 +256,17 @@ You can see a bar here.
     <item nodeId="node-5012">
         <command xml:space="preserve">x shelves</command>
         <result xml:space="preserve">A row of shelves with liquor on them.
+
+You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5075"></child>
+        </children>
+    </item>
+    <item nodeId="node-5075">
+        <command xml:space="preserve">take key</command>
+        <result xml:space="preserve">You already have that.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
