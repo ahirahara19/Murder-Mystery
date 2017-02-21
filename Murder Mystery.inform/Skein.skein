@@ -11,9 +11,11 @@ It's the afternoon and you are an ace detective working on another murder myster
 
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170216 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 alleyway
+A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the south is the sidewalk.
+
 You can see your partner and a dead body here.
 
 &gt;</result>
@@ -22,6 +24,7 @@ You can see your partner and a dead body here.
             <child nodeId="node-4717"></child>
             <child nodeId="node-4719"></child>
             <child nodeId="node-4215"></child>
+            <child nodeId="node-4877"></child>
             <child nodeId="node-4140"></child>
             <child nodeId="node-4600"></child>
             <child nodeId="node-4091"></child>
@@ -31,19 +34,21 @@ You can see your partner and a dead body here.
             <child nodeId="node-4843"></child>
             <child nodeId="node-4172"></child>
             <child nodeId="node-4086"></child>
+            <child nodeId="node-4874"></child>
             <child nodeId="node-4721"></child>
         </children>
     </item>
     <item nodeId="node-4721">
         <command xml:space="preserve">x dead body</command>
-        <result xml:space="preserve">A woman, maybe in her late 20"s.
+        <result xml:space="preserve">A blonde woman, maybe in her late 20"s.
 
-you see that she is carrying a stamp card for the bakery next door.
+you see that she is carrying a stamp card from the bakery next door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4793"></child>
             <child nodeId="node-4752"></child>
+            <child nodeId="node-4895"></child>
             <child nodeId="node-4725"></child>
         </children>
     </item>
@@ -68,6 +73,189 @@ you see that she is carrying a stamp card for the bakery next door.
     <item nodeId="node-4780">
         <command xml:space="preserve">eat bread</command>
         <result xml:space="preserve">That's plainly inedible.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4895">
+        <command xml:space="preserve">take stamp</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4896"></child>
+        </children>
+    </item>
+    <item nodeId="node-4896">
+        <command xml:space="preserve">x stamp</command>
+        <result xml:space="preserve">A stamp card with lots of holes punched in it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4897"></child>
+        </children>
+    </item>
+    <item nodeId="node-4897">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4898"></child>
+        </children>
+    </item>
+    <item nodeId="node-4898">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4899"></child>
+        </children>
+    </item>
+    <item nodeId="node-4899">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4900"></child>
+        </children>
+    </item>
+    <item nodeId="node-4900">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+bakery
+As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough.
+
+You can see baker here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4901"></child>
+        </children>
+    </item>
+    <item nodeId="node-4901">
+        <command xml:space="preserve">ask baker about stamp</command>
+        <result xml:space="preserve">Yea, those are my stamp cards, buy 10 loafs get one for free. I remember seeing Lisa come into my shop a couple of hours ago to pre order a loaf of bread with one of those stamp cards. Then she said she was going to go to the flower shop, which is just east of here. She never came back for her bread though, would you like it?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4902"></child>
+        </children>
+    </item>
+    <item nodeId="node-4902">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">Here you go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4903"></child>
+        </children>
+    </item>
+    <item nodeId="node-4903">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4904"></child>
+        </children>
+    </item>
+    <item nodeId="node-4904">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4905"></child>
+        </children>
+    </item>
+    <item nodeId="node-4905">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4906"></child>
+        </children>
+    </item>
+    <item nodeId="node-4906">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4907"></child>
+        </children>
+    </item>
+    <item nodeId="node-4907">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+crosswalk
+A white and black striped crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4908"></child>
+        </children>
+    </item>
+    <item nodeId="node-4908">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+night club entrance
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4924"></child>
+        </children>
+    </item>
+    <item nodeId="node-4924">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+'night club'
+Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats.
+
+You can see a bar here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4925"></child>
+        </children>
+    </item>
+    <item nodeId="node-4925">
+        <command xml:space="preserve">x 'night club'</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5011"></child>
+        </children>
+    </item>
+    <item nodeId="node-5011">
+        <command xml:space="preserve">x bar</command>
+        <result xml:space="preserve">A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5012"></child>
+        </children>
+    </item>
+    <item nodeId="node-5012">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">A row of shelves with liquor on them.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -314,6 +502,42 @@ You can see baker here.
     <item nodeId="node-4824">
         <command xml:space="preserve">ask baker about stamp</command>
         <result xml:space="preserve">I remember seeing her come into my shop a couple of hours ago to pre order a loaf of bread. Then she said she was on her way to the flower shop, which is just east of here. She never came back for her bread though, would you like it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4874">
+        <command xml:space="preserve">x body</command>
+        <result xml:space="preserve">A blonde woman, maybe in her late 20"s.
+
+you see that she is carrying a stamp card for the bakery next door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4875"></child>
+        </children>
+    </item>
+    <item nodeId="node-4875">
+        <command xml:space="preserve">take stamp</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4876"></child>
+            <child nodeId="node-4893"></child>
+        </children>
+    </item>
+    <item nodeId="node-4893">
+        <command xml:space="preserve">x stamp</command>
+        <result xml:space="preserve">You see nothing special about stamp card.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4876">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  stamp card
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1793,6 +2017,139 @@ night club entrance
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 night club entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4877">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4878"></child>
+        </children>
+    </item>
+    <item nodeId="node-4878">
+        <command xml:space="preserve">x body</command>
+        <result xml:space="preserve">A blonde woman, maybe in her late 20"s.
+
+you see that she is carrying a stamp card for the bakery next door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4879"></child>
+        </children>
+    </item>
+    <item nodeId="node-4879">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  stamp card
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4880"></child>
+        </children>
+    </item>
+    <item nodeId="node-4880">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4881"></child>
+        </children>
+    </item>
+    <item nodeId="node-4881">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4882"></child>
+        </children>
+    </item>
+    <item nodeId="node-4882">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4883"></child>
+        </children>
+    </item>
+    <item nodeId="node-4883">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+bakery
+As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough.
+
+You can see baker here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4884"></child>
+        </children>
+    </item>
+    <item nodeId="node-4884">
+        <command xml:space="preserve">ask baker about Lisa</command>
+        <result xml:space="preserve">I heard about her death, she had so much to live for.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4885"></child>
+        </children>
+    </item>
+    <item nodeId="node-4885">
+        <command xml:space="preserve">ask baker about stamp card</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4886"></child>
+        </children>
+    </item>
+    <item nodeId="node-4886">
+        <command xml:space="preserve">ask baker about stamp</command>
+        <result xml:space="preserve">Yea, those are my stamp cards, buy 10 loafs get one for free. I remember seeing Lisa come into my shop a couple of hours ago to pre order a loaf of bread with one of those stamp cards. Then she said she was going to go to the flower shop, which is just east of here. She never came back for her bread though, would you like it?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4887"></child>
+        </children>
+    </item>
+    <item nodeId="node-4887">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4888"></child>
+        </children>
+    </item>
+    <item nodeId="node-4888">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">Here you go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4889"></child>
+        </children>
+    </item>
+    <item nodeId="node-4889">
+        <command xml:space="preserve">eat bread</command>
+        <result xml:space="preserve">You feel like you will need this later
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4890"></child>
+        </children>
+    </item>
+    <item nodeId="node-4890">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  bread
+  stamp card
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
