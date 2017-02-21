@@ -96,6 +96,21 @@ crosswalk is south of corner sidewalk. description of crosswalk is "A white and 
 night club entrance is south of crosswalk.
 
 bouncer is in night club entrance. bouncer is a person.
+
+instead of giving bouncer a "flower":
+	say "Thank you, I really wanted a flower because I have been so sad recently. No one really likes me because I seem scary, but deep down I am a nice guy."
+
+instead of going south in night club entrance:
+	if bouncer is not carrying bread:
+		say "The bouncer blocks your path";
+	otherwise:
+		continue the action.
+		
+instead of going south in night club entrance:
+	if bouncer is not carrying flower:
+		say "The bouncer blocks your path";
+	otherwise:
+		continue the action.
 		
 'night club' is a room. description of 'night club' is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
 
