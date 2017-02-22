@@ -6,7 +6,7 @@ The description of the player is "You look down at yourself and see that you are
 
 alleyway is a room. description of alleyway is "A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the south is the sidewalk."
 
-your partner is a person. your partner is in alleyway. description of your partner is "A skinny man dressed exactly like you."
+your partner is a person. your partner is in alleyway. description of your partner is "A skinny man dressed exactly like you. You can ask him about the dead body, stamp card,"
 
 instead of asking your partner about "dead body":
 say "Someone phoned in about the dead body a little while ago and we learned that the victim's name is Lisa."
@@ -20,8 +20,6 @@ bread is a thing. understand "loaf of bread" as bread. description of bread is "
 
 instead of eating bread:
 	say "You feel like you will need this later, so you decide not to eat it."
-
-bread is inedible.
 
 stamp card is a thing. understand "card" as stamp card. understand "stamp" as stamp card. stamp card is on dead body. stamp card is undescribed. description of stamp card is "A stamp card with lots of holes punched in it."
 
@@ -40,10 +38,13 @@ west of sidewalk is west sidewalk. description of west sidewalk is "An ordinary 
 
 instead of going west in west sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
+	
+instead of going east in east sidewalk:
+	say "You take a couple steps, but decide there is nothing important this way and turn back."
 
 bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough."
 
-baker is a person. baker is in bakery. description of baker is "A man with a moustache wearning a chef's hat and a chef uniform. He is covered in flour."
+baker is a person. baker is in bakery. description of baker is "A man with a moustache wearning a chef's hat and a chef uniform. He is covered in flour. You can ask him about the dead body, Lisa, stamp card."
 
 instead of asking baker about "dead body":
 say "I heard about the women's death, her name was Lisa right? She had so much to live for."
@@ -85,16 +86,33 @@ flowershop is north of east sidewalk.
 
 jewelry store is a room.
 
+jeweler is a person. jeweler is in jewelry store.
+
+knife is a thing. 
+
+instead of asking jeweler about "dead body":
+	if player is not carrying knife:
+		say "I don't have to talk to you. If you are not a customer I do not want you in my store. Please leave.";
+	otherwise:
+		say "cool"
+	
+
 jewelry store is north of corner sidewalk.
 
 crosswalk is south of corner sidewalk. description of crosswalk is "A white and black striped crosswalk."
 
 night club entrance is south of crosswalk.
 
-bouncer is in night club entrance. bouncer is a person. description of bouncer is "A tall burly man in a black suit. He looks scary. You can ask him about, how to get into night club,"
+bouncer is in night club entrance. bouncer is a person. description of bouncer is "A tall burly man in a black suit. He looks scary. You can ask him about how to get into night club, dead body, Lisa."
 
 instead of asking bouncer about "how to get into night club":
-say "fv".
+say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
+
+instead of asking bouncer about  "dead body":
+say "I heard about the dead body in the alleyway. I wonder who would do such a thing."
+
+instead of asking bouncer about "Lisa":
+say "She worked for this night club, she is the bartender. Are you saying she was the one killed? That's horrible."
 
 Instead of giving flower to bouncer:
 	say "Thank you, I really wanted a flower because I have been so sad recently. No one really likes me because I seem scary, but deep down I am a nice guy.";
@@ -107,35 +125,28 @@ Instead of giving bread to bouncer :
 instead of going south in night club entrance:
 	if bouncer is carrying bread and bouncer is carrying flower:
 		move player to Studio;
-		say "Arrived at studio.";
 	otherwise:
 		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass.".
 		
-[instead of going south in night club entrance:
-	if bouncer is not carrying flower:
-		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up";
-	otherwise:
-		continue the action.]
-		
 studio is a room. Printed name of studio is "night club". description of studio is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
 
-a bar is a thing. a bar is in studio. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
+a bar is a thing. a bar is in studio. a bar is fixed in place. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
 
-shelves is a thing. shelves is in studio. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
+shelves is a thing. shelves is in studio. shelves is fixed in place. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
 
 After examining shelves:
 	Say "You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
 	Move key to player.
 
-key is a thing. key is on shelf. key is undescribed. description of key is "An ordinary key that unlocks a door."
+key is a thing. key is on shelf. key is undescribed. description of key is "An ordinary key that unlocks a door. It has a number on it, 433."
 
 studio is south of night club entrance.
 
 apartment building entrance is west of night club entrance.
 
-'apartment building' is a room.
+lemon is a room. printed name of lemon is "apartment building".
 
-'apartment building' is south of apartment building entrance.
+lemon is south of apartment building entrance.
 
 When play begins: 
     now left hand status line is "Exits: [exit list]"; 
