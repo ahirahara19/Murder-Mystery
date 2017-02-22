@@ -21,7 +21,7 @@ bread is a thing. understand "loaf of bread" as bread. description of bread is "
 instead of eating bread:
 	say "You feel like you will need this later, so you decide not to eat it."
 
-bread is inedible
+bread is inedible.
 
 stamp card is a thing. understand "card" as stamp card. understand "stamp" as stamp card. stamp card is on dead body. stamp card is undescribed. description of stamp card is "A stamp card with lots of holes punched in it."
 
@@ -61,10 +61,6 @@ instead of asking baker about "[stamp card]":
 
 bakery is north of west sidewalk.
 
-abandoned buiding is a room.
-
-abandoned building is north of end of sidewalk.
-
 east of sidewalk is east sidewalk. description of east sidewalk is "An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop."
 
 corner sidewalk is east of east sidewalk. description of corner sidewalk is "An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk."
@@ -77,7 +73,7 @@ instead of asking florist about "dead body":
 say "I saw the crime tape while on my way to work today. What a horrible thing to happen in our neighborhood."
 
 instead of asking florist about "Lisa":
-say "I saw her come in the other day, she just browsed around my shop for a little while and then went on her way. I think she was headed towards the night club"
+say "I saw her come in the other day, she just browsed around my shop for a little while and then went on her way. I think she works as a bartender in the night club."
 
 instead of asking florist about "flower":
 say "Sure, I have lots of flowers, I'll give you one for free.";
@@ -95,28 +91,37 @@ crosswalk is south of corner sidewalk. description of crosswalk is "A white and 
 
 night club entrance is south of crosswalk.
 
-bouncer is in night club entrance. bouncer is a person.
+bouncer is in night club entrance. bouncer is a person. description of bouncer is "A tall burly man in a black suit. He looks scary. You can ask him about, how to get into night club,"
 
-instead of giving bouncer a "flower":
-	say "Thank you, I really wanted a flower because I have been so sad recently. No one really likes me because I seem scary, but deep down I am a nice guy."
+instead of asking bouncer about "how to get into night club":
+say "fv".
+
+Instead of giving flower to bouncer:
+	say "Thank you, I really wanted a flower because I have been so sad recently. No one really likes me because I seem scary, but deep down I am a nice guy.";
+	move flower to bouncer.
+	
+Instead of giving bread to bouncer :
+	say "Thank you for the bread. I am really hungry right now, but I have to guard this entrance, so I was not able to get any food.";
+	move bread to bouncer.
 
 instead of going south in night club entrance:
-	if bouncer is not carrying bread:
-		say "The bouncer blocks your path";
+	if bouncer is carrying bread and bouncer is carrying flower:
+		move player to Studio;
+		say "Arrived at studio.";
 	otherwise:
-		continue the action.
+		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass.".
 		
-instead of going south in night club entrance:
+[instead of going south in night club entrance:
 	if bouncer is not carrying flower:
-		say "The bouncer blocks your path";
+		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up";
 	otherwise:
-		continue the action.
+		continue the action.]
 		
-'night club' is a room. description of 'night club' is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
+studio is a room. Printed name of studio is "night club". description of studio is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
 
-a bar is a thing. a bar is in 'night club'. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
+a bar is a thing. a bar is in studio. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
 
-shelves is a thing. shelves is in 'night club'. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
+shelves is a thing. shelves is in studio. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
 
 After examining shelves:
 	Say "You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
@@ -124,7 +129,7 @@ After examining shelves:
 
 key is a thing. key is on shelf. key is undescribed. description of key is "An ordinary key that unlocks a door."
 
-'night club' is south of night club entrance.
+studio is south of night club entrance.
 
 apartment building entrance is west of night club entrance.
 
