@@ -6,13 +6,28 @@ The description of the player is "You look down at yourself and see that you are
 
 alleyway is a room. description of alleyway is "A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the south is the sidewalk."
 
-your partner is a person. your partner is in alleyway. description of your partner is "A skinny man dressed exactly like you. You can ask him about the dead body, stamp card,"
+your partner is a person. your partner is in alleyway. description of your partner is "A skinny man dressed exactly like you. You can ask him about the dead body, the stamp card, and some other things."
 
 instead of asking your partner about "dead body":
 say "Someone phoned in about the dead body a little while ago and we learned that the victim's name is Lisa."
 
 instead of asking your partner about "stamp card":
 say "I wonder why she had a stamp card? Although, I know there is a bakery to the west."
+
+instead of asking your partner about "Lisa":
+say "Ohhh, so that's the victims name. I'll make sure to jot that down."
+
+instead of asking your partner about "knife":
+say "Wow, that is own dangerous weapon. I wonder who would use such a weapon."
+
+instead of asking your partner about "bakery":
+say "I saw the shop, it is to the west of us."
+
+instead of asking your partner about "flower shop":
+say "That shop is to the east of us."
+
+instead of asking your partner about "jewelery store":
+say "That shop is to the east of us."
 
 a dead body is a thing in alleyway. a dead body is fixed in place. description of dead body is "A blonde woman, maybe in her late 20's."
 
@@ -28,29 +43,32 @@ After examining dead body:
 
 South of Alleyway is sidewalk. description of sidewalk is "An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway."
 
-instead of going east in sidewalk:
-	if the player is not carrying bread:
-		say "You feel like you should still look around here for more clues.";
-	otherwise:
-		continue the action.
-
 west of sidewalk is west sidewalk. description of west sidewalk is "An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery."
 
 instead of going west in west sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
 	
-instead of going east in east sidewalk:
+instead of going east in corner sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
 
-bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough."
+bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. To the south is the west sidewalk."
 
-baker is a person. baker is in bakery. description of baker is "A man with a moustache wearning a chef's hat and a chef uniform. He is covered in flour. You can ask him about the dead body, Lisa, stamp card."
+baker is a person. baker is in bakery. description of baker is "A man with a moustache wearning a chef's hat and a chef uniform. He is covered in flour. You can ask him about the dead body, Lisa, stamp card, flower shop, and jewelery store."
 
 instead of asking baker about "dead body":
 say "I heard about the women's death, her name was Lisa right? She had so much to live for."
 
 instead of asking baker about "Lisa":
 say "I heard about her death, she had so much to live for."
+
+instead of asking baker about "knife":
+say "I have never seen that weapon in my life. I would never use that to cut my bread."
+
+instead of asking baker about "flower shop":
+say "That shop is just east of here, past the alleyway."
+
+instead of asking baker about "jewelery store":
+say "That store is east of here, past the flower shop."
 
 understand "stamp", "stamp card", "card", "the stamp", "the card", and "the stamp card" as "[stamp card]".
 
@@ -68,7 +86,7 @@ corner sidewalk is east of east sidewalk. description of corner sidewalk is "An 
 
 flowershop is a room. The printed name of flowershop is "flower shop". description of flowershop is "There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning."
 
-florist is a person. florist is in flowershop. description of florist is "A lady wearning a green apron with a long sleeved shirt, jeans, and glasses."
+florist is a person. florist is in flowershop. description of florist is "A lady wearning a green apron with a long sleeved shirt, jeans, and glasses. You can ask her about the dead body, Lisa, bakery, jewelery store, and some other things."
 
 instead of asking florist about "dead body":
 say "I saw the crime tape while on my way to work today. What a horrible thing to happen in our neighborhood."
@@ -76,7 +94,20 @@ say "I saw the crime tape while on my way to work today. What a horrible thing t
 instead of asking florist about "Lisa":
 say "I saw her come in the other day, she just browsed around my shop for a little while and then went on her way. I think she works as a bartender in the night club."
 
+instead of asking florist about "bakery":
+say "The bakery is west of here, past the alleyway."
+
+instead of asking florist about "jewelery store":
+say "That store is right next to this shop, east of here."
+
+instead of asking baker about "knife":
+say "That's a very sharp knife. I would not use that to cut my flowers."
+
 instead of asking florist about "flower":
+say "Sure, I have lots of flowers, I'll give you one for free.";
+move flower to player.
+
+instead of asking florist about "flowers":
 say "Sure, I have lots of flowers, I'll give you one for free.";
 move flower to player.
 
@@ -84,26 +115,52 @@ flower is a thing.
 
 flowershop is north of east sidewalk.
 
-jewelry store is a room.
+jewelry store is a room. description of jewelery store is "A fancy store with glass casing covering all the jewelery. To the south is the corner sidewalk."
 
-jeweler is a person. jeweler is in jewelry store.
+jeweler is a person. jeweler is in jewelry store. description of jeweler is "A man in a suit wearing a monocle. You can try asking him some questions, but he doesn't see that chatty."
 
-knife is a thing. 
+instead of asking jeweler about "jewelery":
+	say "I have the finest jewels in the city. If you want to buy some you better have a large bank account."
+	
+instead of asking jeweler about "bakery":
+say "That is west of here, their breads are not as good as my jewels."
+
+instead of asking jeweler about "flower shop":
+say "That is to the west of here, right next door. I guess if you want a cheaper gift you could buy flowers."
 
 instead of asking jeweler about "dead body":
 	if player is not carrying knife:
 		say "I don't have to talk to you. If you are not a customer I do not want you in my store. Please leave.";
 	otherwise:
-		say "cool"
-	
+		say "I don't know what you are talking about."
+		
+instead of asking jeweler about "Lisa":
+	if player is not carrying knife:
+		say "I don't have to talk to you. If you are not a customer I do not want you in my store. Please leave.";
+	otherwise:
+		say "I don't know what you are talking about."
+
+instead of asking jeweler about "knife":
+	if player is not carrying knife:
+		say "I don't have to talk to you. If you are not a customer I do not want you in my store. Please leave.";
+	otherwise:
+		say "How did you find that? Okay, I'll talk. Just try to cut me a deal if I confess, okay?";
+		move player to presinct.
+		
+presinct is a room.
+		
+An every turn rule:
+	If player is in presinct:
+		say "You take the jeweler down to the presinct to interogate him. He confesses to the murder of Lisa and says he was doing it for love. He says she didn't know what was best for herself, so he had to take matters into his own hands... Just another day in the life of an ace detective.";
+		end the story finally.
 
 jewelry store is north of corner sidewalk.
 
 crosswalk is south of corner sidewalk. description of crosswalk is "A white and black striped crosswalk."
 
-night club entrance is south of crosswalk.
+night club entrance is south of crosswalk. description of night club entrance is "A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk."
 
-bouncer is in night club entrance. bouncer is a person. description of bouncer is "A tall burly man in a black suit. He looks scary. You can ask him about how to get into night club, dead body, Lisa."
+bouncer is in night club entrance. bouncer is a person. description of bouncer is "A tall burly man in a black suit. He looks scary. You can ask him about how to get into night club, dead body, Lisa, and apartment building."
 
 instead of asking bouncer about "how to get into night club":
 say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
@@ -112,23 +169,33 @@ instead of asking bouncer about  "dead body":
 say "I heard about the dead body in the alleyway. I wonder who would do such a thing."
 
 instead of asking bouncer about "Lisa":
-say "She worked for this night club, she is the bartender. Are you saying she was the one killed? That's horrible."
+say "She worked for this night club, she was the bartender and lived next door. Are you saying she was the one killed? That's horrible."
+
+instead of asking bouncer about "knife":
+say "That looks dangerous. I would never use that at the night club."
+
+instead of asking bouncer about "apartment building":
+say "The apartment building just west of here seems kind of sketchy. I know you understand, it's next to a night club, what do you expect?"
 
 Instead of giving flower to bouncer:
-	say "Thank you, I really wanted a flower because I have been so sad recently. No one really likes me because I seem scary, but deep down I am a nice guy.";
+	say "Thank you, I really wanted a flower because I have been so sad recently. This really helps my suit stand out, he puts the flower in his breast pocket. No one really likes me because I seem scary, but deep down I am a nice guy.";
 	move flower to bouncer.
 	
 Instead of giving bread to bouncer :
-	say "Thank you for the bread. I am really hungry right now, but I have to guard this entrance, so I was not able to get any food.";
+	say "Thank you for the bread. I am really hungry right now, but I have to guard this entrance, so I was not able to get any food. You are a real lifesaver.";
 	move bread to bouncer.
 
 instead of going south in night club entrance:
 	if bouncer is carrying bread and bouncer is carrying flower:
 		move player to Studio;
 	otherwise:
-		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass.".
+		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass. Maybe something to eat and something that smells nice."
 		
-studio is a room. Printed name of studio is "night club". description of studio is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats."
+studio is a room. Printed name of studio is "night club". description of studio is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats. To the north is the night club entrance."
+
+chairs is a thing. chairs is fixed in place. description of chairs is "Ordinary charis next to the bar."
+
+understand "chair" as chairs.
 
 a bar is a thing. a bar is in studio. a bar is fixed in place. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
 
@@ -138,15 +205,36 @@ After examining shelves:
 	Say "You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
 	Move key to player.
 
-key is a thing. key is on shelf. key is undescribed. description of key is "An ordinary key that unlocks a door. It has a number on it, 433."
+key is a thing. key is on shelf. key is undescribed. key unlocks popcorn. description of key is "An ordinary key that unlocks a door. It has a number on it, 101."
 
 studio is south of night club entrance.
 
-apartment building entrance is west of night club entrance.
+apartment building entrance is west of night club entrance. description of apartment building entrance is "A one-story building stands before you. To the south is the door to the apartment building. To the east is the night club entrance."
 
 lemon is a room. printed name of lemon is "apartment building".
 
-lemon is south of apartment building entrance.
+understand "apartment building", "apartment", "building" as lemon.
+
+lemon is south of popcorn. description of lemon is "An apartment with no security. There is a hall with rooms on either side. To the north is the apartment entrance. To the west is room 101."
+
+popcorn is a door. popcorn is locked. popcorn is south of apartment building entrance. Printed name of popcorn is "apartment entrance door". description of popcorn is "The entrance to this apartment building is locked. I think it is privately owned. Looks like we will need a key to get in."
+
+understand "door", "apartment door" as popcorn.
+
+west of lemon is flat. flat is a room. printed name of flat is "Room 101". description of flat is "An ordinary room which looks like it has been flipped upside down. There is blood splattered along the floor. To the east is the apartment hall."
+
+knife is a thing. knife is in flat. description of knife is "A bloody knife with a diamond studded handle. Who would even own a diamond studded knife?"
+
+understand "Knife" as knife.
+
+instead of going west in lemon:
+	say "You jiggle the door knob and realize that the door is unlocked. Without thinking twice you shove the door open.";
+	continue the action
+	
+instead of going west in apartment building entrance:
+	say "You take a couple steps, but decide there is nothing important this way and turn back."
+
+
 
 When play begins: 
     now left hand status line is "Exits: [exit list]"; 
