@@ -29,6 +29,12 @@ say "That shop is to the east of us."
 instead of asking your partner about "jewelery store":
 say "That shop is to the east of us."
 
+instead of asking your partner about "apartment building":
+say "I heard about that apartment building, it is right across the street from here. Although it is a private apartment building."
+
+instead of asking your partner about "night club":
+say "I sometimes go to that night club, it is across the street from here. The bouncer doesn't always let people in though."
+
 a dead body is a thing in alleyway. a dead body is fixed in place. description of dead body is "A blonde woman, maybe in her late 20's."
 
 bread is a thing. understand "loaf of bread" as bread. description of bread is "whole wheat bread."
@@ -51,7 +57,7 @@ instead of going west in west sidewalk:
 instead of going east in corner sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
 
-bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. To the south is the west sidewalk."
+bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. A glass window is in the front of the store and there is a showcase of different breads in the back of the bakery. There are also other pastries in rows in the storefront window. To the south is the west sidewalk."
 
 baker is a person. baker is in bakery. description of baker is "A man with a moustache wearning a chef's hat and a chef uniform. He is covered in flour. You can ask him about the dead body, Lisa, stamp card, flower shop, and jewelery store."
 
@@ -80,11 +86,11 @@ instead of asking baker about "[stamp card]":
 
 bakery is north of west sidewalk.
 
-east of sidewalk is east sidewalk. description of east sidewalk is "An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop."
+east of sidewalk is east sidewalk. description of east sidewalk is "An ordinary concrete sidewalk. TheTo the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop."
 
 corner sidewalk is east of east sidewalk. description of corner sidewalk is "An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk."
 
-flowershop is a room. The printed name of flowershop is "flower shop". description of flowershop is "There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning."
+flowershop is a room. The printed name of flowershop is "flower shop". description of flowershop is "There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning. You see all kinds of different flowers, like tulips and roses. To the south is the east sidewalk."
 
 florist is a person. florist is in flowershop. description of florist is "A lady wearning a green apron with a long sleeved shirt, jeans, and glasses. You can ask her about the dead body, Lisa, bakery, jewelery store, and some other things."
 
@@ -115,7 +121,7 @@ flower is a thing.
 
 flowershop is north of east sidewalk.
 
-jewelry store is a room. description of jewelery store is "A fancy store with glass casing covering all the jewelery. To the south is the corner sidewalk."
+jewelry store is a room. description of jewelery store is "A fancy store with glass casing covering all the jewelery. There is no store entrance window, probably so thieves cannot case the inside of the building. To the south is the corner sidewalk."
 
 jeweler is a person. jeweler is in jewelry store. description of jeweler is "A man in a suit wearing a monocle. You can try asking him some questions, but he doesn't see that chatty."
 
@@ -199,10 +205,10 @@ understand "chair" as chairs.
 
 a bar is a thing. a bar is in studio. a bar is fixed in place. description of a bar is "A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves."
 
-shelves is a thing. shelves is in studio. shelves is fixed in place. shelves is undescribed. description of shelves is "A row of shelves with liquor on them."
+shelves is a thing. shelves is in studio. shelves is fixed in place. shelves is undescribed. 
 
-After examining shelves:
-	Say "You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
+instead of examining shelves:
+	Say "[if player is carrying the key]A row of shelves with liquor on them.[otherwise]You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.";
 	Move key to player.
 
 key is a thing. key is on shelf. key is undescribed. key unlocks popcorn. description of key is "An ordinary key that unlocks a door. It has a number on it, 101."
@@ -247,3 +253,5 @@ To say exit list:
 
 rule for deciding whether all includes something:
 it does not.
+
+[x body, take stamp, s, w, n, ask baker about stamp, yes, s, e, e, n, ask florist about flower, s, e, s, s, give bouncer bread, give bouncer flower, s, x bar, x shelves, n, w, unlock door with key, s, w, take knife, e, n, e, n, n, ask jeweler about knife. Then you win game.]

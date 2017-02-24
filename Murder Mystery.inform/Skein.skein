@@ -11,7 +11,7 @@ It's the afternoon and you are an ace detective working on another murder myster
 
 Murder Mystery
 An Interactive Fiction by Aaron Hirahara
-Release 1 / Serial number 170222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170223 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 alleyway
 A big alley with gray brick walls on either side. The ground has a lot of cracks in the concrete. This is not the type of place you want to be spending your afternoon. To the south is the sidewalk.
@@ -83,7 +83,8 @@ you see that she is carrying a stamp card from the bakery next door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4896"></child>
+        <children><child nodeId="node-7264"></child>
+            <child nodeId="node-4896"></child>
         </children>
     </item>
     <item nodeId="node-4896">
@@ -537,6 +538,245 @@ An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the 
         <result xml:space="preserve">
 east sidewalk
 An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7264">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7265"></child>
+        </children>
+    </item>
+    <item nodeId="node-7265">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7266"></child>
+        </children>
+    </item>
+    <item nodeId="node-7266">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+flower shop
+There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning.
+
+You can see florist here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7267"></child>
+        </children>
+    </item>
+    <item nodeId="node-7267">
+        <command xml:space="preserve">ask florist about flower</command>
+        <result xml:space="preserve">Sure, I have lots of flowers, I'll give you one for free.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7268"></child>
+        </children>
+    </item>
+    <item nodeId="node-7268">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7269"></child>
+        </children>
+    </item>
+    <item nodeId="node-7269">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7270"></child>
+        </children>
+    </item>
+    <item nodeId="node-7270">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7271"></child>
+        </children>
+    </item>
+    <item nodeId="node-7271">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7272"></child>
+        </children>
+    </item>
+    <item nodeId="node-7272">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+bakery
+As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. To the south is the west sidewalk.
+
+You can see baker here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7273"></child>
+        </children>
+    </item>
+    <item nodeId="node-7273">
+        <command xml:space="preserve">ask baker about stamp</command>
+        <result xml:space="preserve">Yea, those are my stamp cards, buy 10 loafs get one for free. I remember seeing Lisa come into my shop a couple of hours ago to pre order a loaf of bread with one of those stamp cards. Then she said she was going to go to the flower shop, which is just east of here. She never came back for her bread though, would you like it?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7274"></child>
+        </children>
+    </item>
+    <item nodeId="node-7274">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">Here you go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7275"></child>
+        </children>
+    </item>
+    <item nodeId="node-7275">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7276"></child>
+        </children>
+    </item>
+    <item nodeId="node-7276">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7277"></child>
+        </children>
+    </item>
+    <item nodeId="node-7277">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7278"></child>
+        </children>
+    </item>
+    <item nodeId="node-7278">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7279"></child>
+        </children>
+    </item>
+    <item nodeId="node-7279">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+crosswalk
+A white and black striped crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7280"></child>
+        </children>
+    </item>
+    <item nodeId="node-7280">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+night club entrance
+A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk.
+
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7281"></child>
+        </children>
+    </item>
+    <item nodeId="node-7281">
+        <command xml:space="preserve">give bouncer flower</command>
+        <result xml:space="preserve">Thank you, I really wanted a flower because I have been so sad recently. This really helps my suit stand out, he puts the flower in his breast pocket. No one really likes me because I seem scary, but deep down I am a nice guy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7282"></child>
+        </children>
+    </item>
+    <item nodeId="node-7282">
+        <command xml:space="preserve">give bouncer bread</command>
+        <result xml:space="preserve">Thank you for the bread. I am really hungry right now, but I have to guard this entrance, so I was not able to get any food. You are a real lifesaver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7283"></child>
+        </children>
+    </item>
+    <item nodeId="node-7283">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">night club
+Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats. To the north is the night club entrance.
+
+You can see a bar here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7284"></child>
+        </children>
+    </item>
+    <item nodeId="node-7284">
+        <command xml:space="preserve">x bar</command>
+        <result xml:space="preserve">A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7285"></child>
+        </children>
+    </item>
+    <item nodeId="node-7285">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7286"></child>
+        </children>
+    </item>
+    <item nodeId="node-7286">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">A row of shelves with liquor on them.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2170,7 +2410,7 @@ An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the e
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 bakery
-As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough.
+As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. To the south is the west sidewalk.
 
 You can see baker here.
 
@@ -2184,7 +2424,8 @@ You can see baker here.
         <result xml:space="preserve">Yea, those are my stamp cards, buy 10 loafs get one for free. I remember seeing Lisa come into my shop a couple of hours ago to pre order a loaf of bread with one of those stamp cards. Then she said she was going to go to the flower shop, which is just east of here. She never came back for her bread though, would you like it?
 </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-7067"></child>
+        <children><child nodeId="node-7227"></child>
+            <child nodeId="node-7067"></child>
         </children>
     </item>
     <item nodeId="node-7067">
@@ -2612,6 +2853,396 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <item nodeId="node-7220">
         <command xml:space="preserve">resart</command>
         <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7227">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7228"></child>
+        </children>
+    </item>
+    <item nodeId="node-7228">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">Here you go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7229"></child>
+        </children>
+    </item>
+    <item nodeId="node-7229">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+west sidewalk
+An ordinary concrete sidewalk. To the east is the sidewalk, to the west is the end of the sidewalk, and to the north is the bakery.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7230"></child>
+        </children>
+    </item>
+    <item nodeId="node-7230">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+sidewalk
+An ordinary concrete sidewalk. Seems as if it has been repaved recently. To the west is the west part of the sidewalk to the east is the east part of the sidewalk, and to the north is the alleyway.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7231"></child>
+        </children>
+    </item>
+    <item nodeId="node-7231">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7232"></child>
+        </children>
+    </item>
+    <item nodeId="node-7232">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+flower shop
+There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning.
+
+You can see florist here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7233"></child>
+        </children>
+    </item>
+    <item nodeId="node-7233">
+        <command xml:space="preserve">ask florist about flower</command>
+        <result xml:space="preserve">Sure, I have lots of flowers, I'll give you one for free.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7234"></child>
+        </children>
+    </item>
+    <item nodeId="node-7234">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+east sidewalk
+An ordinary concrete sidewalk. To the west is the sidewalk, to the east is the corner sidewalk, and to the north is the flower shop.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7235"></child>
+        </children>
+    </item>
+    <item nodeId="node-7235">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+corner sidewalk
+An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7236"></child>
+        </children>
+    </item>
+    <item nodeId="node-7236">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+crosswalk
+A white and black striped crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7237"></child>
+        </children>
+    </item>
+    <item nodeId="node-7237">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+night club entrance
+A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk.
+
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7238"></child>
+        </children>
+    </item>
+    <item nodeId="node-7238">
+        <command xml:space="preserve">give bouncer bread</command>
+        <result xml:space="preserve">Thank you for the bread. I am really hungry right now, but I have to guard this entrance, so I was not able to get any food. You are a real lifesaver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7239"></child>
+        </children>
+    </item>
+    <item nodeId="node-7239">
+        <command xml:space="preserve">give bouncer flower</command>
+        <result xml:space="preserve">Thank you, I really wanted a flower because I have been so sad recently. This really helps my suit stand out, he puts the flower in his breast pocket. No one really likes me because I seem scary, but deep down I am a nice guy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7240"></child>
+        </children>
+    </item>
+    <item nodeId="node-7240">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">night club
+Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats. To the north is the night club entrance.
+
+You can see a bar here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7241"></child>
+        </children>
+    </item>
+    <item nodeId="node-7241">
+        <command xml:space="preserve">x bar</command>
+        <result xml:space="preserve">A marble bar supported by a slab of wood. On one side there is a row of chairs, on the other side you see shelves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7242"></child>
+        </children>
+    </item>
+    <item nodeId="node-7242">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">A row of shelves with liquor on them.
+
+You notice something glimmer behind one of the liquor bottles and move it. You find a key and decide to put it in your pocket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7243"></child>
+        </children>
+    </item>
+    <item nodeId="node-7243">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+night club entrance
+A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk.
+
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7244"></child>
+        </children>
+    </item>
+    <item nodeId="node-7244">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+apartment building entrance
+A one-story building stands before you. To the south is the door to the apartment building. To the east is the night club entrance.
+
+You can see apartment entrance door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7245"></child>
+        </children>
+    </item>
+    <item nodeId="node-7245">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7246"></child>
+        </children>
+    </item>
+    <item nodeId="node-7246">
+        <command xml:space="preserve">unlock door with key</command>
+        <result xml:space="preserve">You unlock apartment entrance door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7247"></child>
+        </children>
+    </item>
+    <item nodeId="node-7247">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening apartment entrance door)
+
+apartment building
+An apartment with no security. There is a hall with rooms on either side. To the north is the apartment entrance. To the west is room 101.
+
+You can see apartment entrance door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7248"></child>
+        </children>
+    </item>
+    <item nodeId="node-7248">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">You jiggle the door knob and realize that the door is unlocked. Without thinking twice you shove the door open.
+
+Room 101
+An ordinary room which looks like it has been flipped upside down. There is blood splattered along the floor. To the east is the apartment hall.
+
+You can see knife here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7249"></child>
+        </children>
+    </item>
+    <item nodeId="node-7249">
+        <command xml:space="preserve">take knife</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7250"></child>
+        </children>
+    </item>
+    <item nodeId="node-7250">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7251"></child>
+        </children>
+    </item>
+    <item nodeId="node-7251">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7252"></child>
+        </children>
+    </item>
+    <item nodeId="node-7252">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+apartment building
+An apartment with no security. There is a hall with rooms on either side. To the north is the apartment entrance. To the west is room 101.
+
+You can see apartment entrance door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7253"></child>
+        </children>
+    </item>
+    <item nodeId="node-7253">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+apartment building entrance
+A one-story building stands before you. To the south is the door to the apartment building. To the east is the night club entrance.
+
+You can see apartment entrance door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7254"></child>
+        </children>
+    </item>
+    <item nodeId="node-7254">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+night club entrance
+A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk.
+
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7255"></child>
+        </children>
+    </item>
+    <item nodeId="node-7255">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">night club
+Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats. To the north is the night club entrance.
+
+You can see a bar here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7256"></child>
+        </children>
+    </item>
+    <item nodeId="node-7256">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7257"></child>
+        </children>
+    </item>
+    <item nodeId="node-7257">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+night club entrance
+A part of the sidewalk with velvet rope leading into the night club. To the west is the apartment building entrance. To the north is the crosswalk.
+
+You can see bouncer here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7258"></child>
+        </children>
+    </item>
+    <item nodeId="node-7258">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+crosswalk
+A white and black striped crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7259"></child>
+        </children>
+    </item>
+    <item nodeId="node-7259">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+corner sidewalk
+An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7260"></child>
+        </children>
+    </item>
+    <item nodeId="node-7260">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+jewelry store
+You can see jeweler here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7261"></child>
+        </children>
+    </item>
+    <item nodeId="node-7261">
+        <command xml:space="preserve">ask jeweler about knife</command>
+        <result xml:space="preserve">How did you find that? Okay, I'll talk. Just try to cut me a deal if I confess, okay?
+
+presinct
+You take the jeweler down to the presinct to interogate him. He confesses to the murder of Lisa and says he was doing it for love. He says she didn't know what was best for herself, so he had to take matters into his own hands... Just another day in the life of an ace detective.
+
+
+
+    *** The End ***
+
+
+
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
