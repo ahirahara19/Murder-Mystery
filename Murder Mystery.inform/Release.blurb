@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/ahirahara19/Desktop/Murder Mystery.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/ahirahara19/Desktop/Murder Mystery.inform"
-release to "/Users/ahirahara19/Desktop/Murder Mystery.materials/Release"
+project folder "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform"
+release to "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Murder Mystery.gblorb"
-storyfile "/Users/ahirahara19/Desktop/Murder Mystery.inform/Build/output.ulx" include
-ifiction "/Users/ahirahara19/Desktop/Murder Mystery.inform/Metadata.iFiction" include
+storyfile "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Build/output.ulx" include
+ifiction "/Users/ahirahara19/Documents/Murder-Mystery/Murder Mystery.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
