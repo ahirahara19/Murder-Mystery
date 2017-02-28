@@ -11,8 +11,8 @@ your partner is a person. your partner is in alleyway. description of your partn
 instead of asking your partner about "dead body":
 say "Someone phoned in about the dead body a little while ago, we have no idea who the culprit is."
 
-instead of asking your partner about "stamp card":
-say "I wonder why she had a stamp card? Although, I know there is a bakery to the west."
+instead of asking your partner about "the shops":
+say "There are many different shops aroun this place. Lots of shops to investigate."
 
 instead of asking your partner about "Lisa":
 say "Ohhh, so that's the victim's name. I'll make sure to jot that down."
@@ -62,7 +62,19 @@ instead of going west in west sidewalk:
 instead of going east in corner sidewalk:
 	say "You take a couple steps, but decide there is nothing important this way and turn back."
 
-bakery is a room. description of bakery is "As you enter the bakery you smell the aroma of fresh bread and see the baker kneading some dough. A glass window is in the front of the store and there is a showcase of different breads in the back of the bakery. There are also other pastries in rows in the storefront window. To the south is the west sidewalk."
+bakery is a room. description of bakery is "As you enter the bakery you see the baker kneading some dough. A glass window is in the front of the store and there is a showcase of different breads in the back of the bakery. There are also other pastries in rows in the storefront window. To the south is the west sidewalk."
+
+pastries is scenery in the bakery. description of pastries is "A variety of different delicacies. All which look very delicious."
+
+understand "pastry" as pastries.
+
+instead of taking pastries:
+	say "You are on duty, maybe after you solve the case."
+	
+dough is scenery in the bakery. description of dough is "Normal dough that bakers use."
+
+instead of taking dough:
+	say "The baker needs that to make bread."
 
 baker is a person. baker is in bakery. description of baker is "A man with a moustache wearing a chef's hat and a chef uniform. He is covered in flour. You can ask him about the dead body, the shops, and a few other things."
 
@@ -104,7 +116,7 @@ east of sidewalk is east sidewalk. description of east sidewalk is "An ordinary 
 
 corner sidewalk is east of east sidewalk. description of corner sidewalk is "An ordinary concrete sidewalk. The sidewalk leads to a crosswalk. To the west is the east sidewalk, to the north is the jewlery store, and to the south is the crosswalk."
 
-flowershop is a room. The printed name of flowershop is "flower shop". description of flowershop is "There are many different types of flowers in here. The aroma from the flowers give you the feeling of a fresh new beginning. You see all kinds of different flowers, like tulips and roses. To the south is the east sidewalk."
+flowershop is a room. The printed name of flowershop is "flower shop". description of flowershop is "There is a florist holding a bouquet of flowers. The aroma from the flowers give you the feeling of a fresh new beginning. To the south is the east sidewalk."
 
 florist is a person. florist is in flowershop. description of florist is "A lady wearing a green apron with a long sleeved shirt, jeans, and glasses. You can ask her about the dead body, Lisa, bakery, jewelry store, and some other things."
 
@@ -188,6 +200,15 @@ bouncer is in night club entrance. bouncer is a person. description of bouncer i
 instead of asking bouncer about "how to get into night club":
 say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
 
+instead of asking bouncer about "how to get into the night club":
+say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
+
+instead of asking bouncer about "how to get in to night club":
+say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
+
+instead of asking bouncer about "how to get in to the night club":
+say "You are not allowed to go in the night club, it's the afternoon anyway. Although, I will let you in if you give me some things I want."
+
 instead of asking bouncer about  "dead body":
 say "I heard about the dead body in the alleyway. I wonder who would do such a thing."
 
@@ -212,7 +233,7 @@ instead of going south in night club entrance:
 	if bouncer is carrying bread and bouncer is carrying flower:
 		move player to Studio;
 	otherwise:
-		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass. Maybe something to eat and something that smells nice."
+		say "The bouncer blocks your path. He seems kind of sad, maybe you could give him some things to cheer him up, so he will let you pass. Maybe something to eat and something that smells nice." [Can't go into night club unless you give the bouncer two certain items.]
 		
 studio is a room. Printed name of studio is "night club". description of studio is "Since it is not night, there is no one in the night club at the moment. You see a bar and a row of seats. It is kind of dark in the night club because normally the lights are on. To the north is the night club entrance."
 
@@ -266,9 +287,42 @@ To say exit list:
 	let place be location; 
 	repeat with way running through directions: 
 		let place be the room way from the location; 
-		if place is a room, say " [way]". [Mr. Kiang]
+		if place is a room, say " [way]". [Mr. Kiang. Get that cat. Shows which direction you can go at the top of the screen.]
 
 rule for deciding whether all includes something:
 it does not.
 
-[x body, take stamp, s, w, n, ask baker about stamp, yes, s, e, e, n, ask florist about flower, s, e, s, s, give bouncer bread, give bouncer flower, s, x bar, x shelves, n, w, unlock door with key, s, w, take knife, e, n, e, n, n, ask jeweler about knife. Then you win game.]
+[x body
+take stamp
+s
+w
+n
+ask baker about stamp
+yes
+s
+e
+e
+n
+askflorist about flower
+s
+e
+s
+s
+give bouncer bread
+give bouncer flower
+s
+x bar
+x shelves
+n
+w
+unlock door with key
+s
+w
+take knife
+e
+n
+e
+n
+n
+ask jeweler about knife
+Win game]
